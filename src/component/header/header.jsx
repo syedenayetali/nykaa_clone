@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../asset/image/banner.png";
+// import banner from "../../asset/image/banner.png";
 import "./header.scss";
 
 const Header = () => {

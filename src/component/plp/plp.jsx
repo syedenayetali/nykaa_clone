@@ -6,7 +6,7 @@ import { FaRegHeart } from "react-icons/fa";
 const Plp = () => {
   const [plpData, setPlpData] = useState([]);
   useEffect(() => {
-    const plpList = fetch("https://fakestoreapi.com/products")
+    fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((json) => setPlpData(json))
       .catch((err) => err);
