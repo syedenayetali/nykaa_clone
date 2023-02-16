@@ -8,12 +8,12 @@ import dealOfTheDay from "../../asset/image/dealOfTheDay.png";
 
 const HeroImage = () => {
   return (
-    <>
-      <div className="heroImageDiv">
+    <div className="container">
+      <div className="heroImageDiv container">
         <img src={heroImage} alt="heroImage" className="heroImage" />
       </div>
       <div className="sliderImages">
-        <div className="sliderImgDiv">
+        <div className="sliderImgDiv container">
           <div className="singleSlideItem">
             <img src={sliderImg} alt="sliderImg" className=" sliderImg" />
             <div className="sliderName">Slash & Save</div>
@@ -52,7 +52,7 @@ const HeroImage = () => {
           </div>
         </div>
       </div>
-      <div className="sliderImages">
+      <div className="sliderImages container">
         <div className="sliderImgDiv">
           <div className="singleSlideItem">
             <img src={sliderImage1} alt="sliderImg" className=" sliderImg" />
@@ -63,7 +63,7 @@ const HeroImage = () => {
         </div>
       </div>
       <img src={dealOfTheDay} alt="dealOfTheDay" className="dealOfTheDay" />
-    </>
+    </div>
   );
 };
 export default HeroImage;

@@ -6,25 +6,25 @@ import saleTag from "../../asset/image/saleTag.png";
 
 const Navbar = () => {
   return (
-    <div id="navbar">
-      <div id="navbar" className="navbarDiv">
+    <div id="navbar container">
+      <div id="navbar" className="navbarDiv container">
         <div className="logoAndNavItem">
           <div className="logoAndNav">
             <img src={logo} alt="logo" className="logo" />
-            <div className="navItem">Categories</div>
+            {/* <div className="navItem">Categories</div>
             <div className="navItem">Brands</div>
             <div className="navItem">Luxe</div>
             <div className="navItem">Nykaa Fashion</div>
-            <div className="navItem">Beauty Advice</div>
+            <div className="navItem">Beauty Advice</div> */}
           </div>
-          <div className="searchSigninCart">
+          {/* <div className="searchSigninCart">
             <input className="inputBox" type="text" />
             <button className="signInBtn">Sign in</button>
             <HiOutlineShoppingBag className="cartIcon" />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="navbarSecondDiv">
+      {/* <div className="navbarSecondDiv container">
         <div className="secondNav">
           <div className="secondNavItem">Makeup</div>
           <div className="secondNavItem">Skin</div>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="secondNavItem">Pop Ups</div>
           <img src={saleTag} alt="saleTag" className="saleTag" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

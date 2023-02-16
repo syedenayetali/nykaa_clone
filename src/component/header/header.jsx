@@ -1,13 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import banner from "../../asset/image/banner.png";
 import "./header.scss";
 
 const Header = () => {
   return (
     <>
+      <>
+        <Link to="/">
+          <h6>Home</h6>
+        </Link>
+        <Link to="/products">
+          <h6>Products</h6>
+        </Link>
+      </>
       <div className="bannerDiv">
-        <div className="offerHearderDiv">
-          <div className="offerDiv">
+        <div className="offerHearderDiv container">
+          <div className="offerDiv ">
             NYKAA PINK LOVE SALE IS LIVE NOW! UP TO 50% OFF
           </div>
           <div className="headerNav">

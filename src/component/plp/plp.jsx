@@ -14,16 +14,16 @@ const Plp = () => {
   return (
     <>
       {plpData.length > 0 && (
-        <div className="plpDiv">
+        <div className="plpDiv container ">
           {plpData.map((e) => (
-            <div className="plpItem">
+            <div className="plpItem col-12 col-sm-6 col-md-4 col-lg-3 text-center ">
               <img
                 src={e.image}
                 alt="plpProductImg"
-                className="plpProductImg"
+                className="plpProductImg "
               />
-              <div className="productName">{e.title}</div>
-              <div className="mrpDiv">
+              <div className="productName w-100">{e.title}</div>
+              <div className="mrpDiv w-75 m-auto">
                 <div>{`MRP: ₹${(e.price * 82).toFixed(2)}`}</div>
                 <div>{`Rating: ${e.rating.rate}⭐`}</div>
               </div>
