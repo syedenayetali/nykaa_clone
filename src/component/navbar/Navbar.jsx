@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../../asset/image/nykaaLogo.png";
 import "./navbar.scss";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import saleTag from "../../asset/image/saleTag.png";
+// import { HiOutlineShoppingBag } from "react-icons/hi";
+// import saleTag from "../../asset/image/saleTag.png";
 
 const Navbar = () => {
   return (
