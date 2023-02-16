@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./plp.scss";
 import { FaRegHeart } from "react-icons/fa";
+import Loading from "../loading/loading";
 
 const Plp = () => {
   const [plpData, setPlpData] = useState([]);
@@ -13,6 +14,7 @@ const Plp = () => {
   }, []);
   return (
     <>
+      {plpData.length === 0 && <Loading />}
       {plpData.length > 0 && (
         <div className="plpDiv container ">
           {plpData.map((e) => (
